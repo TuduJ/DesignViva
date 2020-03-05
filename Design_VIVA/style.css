@@ -1,0 +1,228 @@
+body{
+    font-family: Poppins;
+}
+
+header{
+    background: url(images/header.jpg);
+    /* background-color: darkgrey; */
+    height: 33em;
+}
+
+.header-top-p{
+    font-size: small;
+}
+
+.section-header .d-flex{
+    height: 33rem;
+}
+
+.section-header p{
+    font-size: xx-large;
+}
+
+.section-header ul {
+    list-style: none;
+  }
+
+
+
+
+
+
+  /* Section 1 Slider */
+
+  .content,
+.minutes {
+  /* margin-left: 30px; */
+}
+
+.minutes {
+  /* height: 200px; */
+  position: relative;
+  /* width: 101px; */
+}
+
+.minute {
+  bottom: 0;
+  font-size: 84px;
+  font-weight: bold;
+  height: 100px;
+  opacity: 0;
+  position: absolute;
+}
+
+.wipe-in {
+  opacity: 1;
+  transition: transform 3s, opacity 3s;
+  transform: translateY(-100%);
+}
+
+.wipe-out {
+  opacity: 0;
+  transition: transform 3000ms, opacity 1000ms;
+  transform: translateY(-200%);
+}
+
+.minute span {
+  font-size: 1rem;
+  font-weight: bold;
+  /* margin-left: 3px; */
+}
+  /* Section 1 Slider End */
+
+
+
+
+
+
+
+.section-2 .container{
+    margin-top: 13rem;
+}
+
+.section-3 p{
+    font-size: x-large;
+}
+
+.section-3 .slide p{
+    font-size: medium;
+}
+
+
+
+
+/* Section 3 Slider Style */
+/* Forward Slider */
+@keyframes scrollf {
+	100% { transform: translateX(0); }
+	0% { transform: translateX(calc(-300px * 7))}
+}
+/* Reverse Slider */
+@keyframes scrollb {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-300px * 7))}
+}
+
+/*  Styling */
+.slider {
+	/* background: white; */
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+}	
+	.slider::before,
+	.slider::after {
+		content: "";
+		position: absolute;
+		z-index: 2;
+	}
+	
+	.slider::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	.slider::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-trackf {
+		animation: scrollf 18s linear infinite;
+		display: flex;
+		width: calc(300px * 14);
+    }
+    
+    .slide-trackb {
+		animation: scrollb 18s linear infinite;
+		display: flex;
+		width: calc(300px * 14);
+	}
+	
+	.slider .slide {
+        display: flex;
+		margin: 0 0.5rem;
+
+	}
+
+/* Section 3 Slider Style End */
+
+
+
+
+
+.section-4-heading{
+    font-size: x-large;
+}
+
+.section5 img{
+    background-color: darkgray;
+}
+
+.section-5-p1{
+    font-size: large;
+}
+
+.section-5-p2{
+    font-size: x-large;
+}
+
+.section-5 i{
+    color: gold;
+}
+
+.section-6-heading{
+    font-size: x-large;
+}
+
+.section-6 .card-body p{
+    line-height: 2em;
+}
+
+.section-6 .card:hover{
+    box-shadow: black;
+}
+
+.section-7-heading{
+    font-size: x-large;
+}
+
+.section-7 ul {
+    list-style: none;
+  }
+
+.section-7 .card{
+    height: 28em;
+}
+
+.section-8-heading{
+    font-size: x-large;
+}
+
+.section-8 .card-header{
+    background-color: white;
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f106";
+    float: right;
+}
+
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f107";
+}
+
+.section-9-heading{
+    font-size: x-large;
+}
+
+.section-9-subHeading{
+    font-size: medium;
+}
+footer li{
+    list-style: none;
+}
